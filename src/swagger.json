@@ -1,7 +1,7 @@
 {
     "openapi": "3.0.0",
     "info": {
-        "title": "RentlX Documentation",
+        "title": "RentX Documentation",
         "description": "This is an API Rent",
         "version": "1.0.0",
         "contact": {
@@ -73,6 +73,35 @@
                     "500": {
                         "description": "Category already exists"
                     }
+                }
+            }
+        },
+        "specifications": {
+            "post": {
+                "tags": ["Specifications"],
+                "summary": "Create a specification",
+                "description": "Create a new specification",
+                "requestBody": {
+                    "content": {
+                        "application/json":{
+                            "schema":{
+                                "$ref": "#/definitions/Specification"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "definitions": {
+        "Specification": {
+            "type": "object",
+            "properties":{
+                "name": {
+                    "type": "string"
+                },
+                "description": {
+                    "type": "string"
                 }
             }
         }
