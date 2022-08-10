@@ -8,8 +8,6 @@ Não deve ser possível cadastrar um carro com uma placa já existente.
 O carro deve ser cadastrado, por padrão, com disponibilidade.
 * O usuário responsável pelo cadastro deve ser um usuário administrador.
 
-teste commit
-
 # Listagem de carros
 
 **RF**
